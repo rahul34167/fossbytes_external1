@@ -12,7 +12,21 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
+    "npm": "^3.10.7",
     "request": "^2.75.0",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahul34167/fossbytes_external1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahul34167/fossbytes_external1/issues"
+  },
+  "homepage": "https://github.com/rahul34167/fossbytes_external1#readme",
+  "description": ""
 }
