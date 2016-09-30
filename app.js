@@ -29,7 +29,7 @@ app.get('/callWiki', function(req, res) {
 
                   console.log(result_string);
                   var result_notfound = "Result not found. Try looking for something else";
-                  var res_string = final_string.replace("\"","");
+                  var res_string = final_string.replace(/"/g,"");
                  // var global=JSON.parse("["+final_string+"]");
                   
                   var result = [];
