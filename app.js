@@ -16,7 +16,7 @@ app.get('/callWiki', function(req, res) {
   var search_string = req.query.search_query;
   var parsed_json="";
 
-  console.log("search string is" + search_string);
+  //console.log("search string is" + search_string);
 
       request.get({ url: "https://en.wikipedia.org/w/api.php?action=opensearch&search="+search_string+"&limit=2&format=json" },function(error, response, body) { 
               if (!error && response.statusCode == 200) { 
@@ -25,11 +25,11 @@ app.get('/callWiki', function(req, res) {
                   parsed_json=JSON.parse(body);
                  // res.send(parsed_json[2]);
                   var result_string =  JSON.stringify(parsed_json[2]);
-                 // var final_string = result_string.substring(1,result_string.length-1); 
+                  var final_string = result_string.substring(1,result_string.length-1); 
 
-                  console.log(result_string);
+                 // console.log(result_string);
                   var result_notfound = "Result not found. Try looking for something else";
-                  var res_string = result_string.replace(/"/g,"");
+                  var res_string = final_string.replace(/"/g,"");
                  // var global=JSON.parse("["+final_string+"]");
                   
                   var result = [];
