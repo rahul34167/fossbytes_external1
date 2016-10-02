@@ -33,7 +33,7 @@ app.get('/callWiki', function(req, res) {
                  // var global=JSON.parse("["+final_string+"]");
                   
                   var result = [];
-                  if(final_string == "")
+                  if(res_string == "")
                   result.push({text: result_notfound});
                   else
                   result.push({text: res_string}); 
