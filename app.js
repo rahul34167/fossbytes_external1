@@ -25,11 +25,11 @@ app.get('/callWiki', function(req, res) {
                   parsed_json=JSON.parse(body);
                  // res.send(parsed_json[2]);
                   var result_string =  JSON.stringify(parsed_json[2]);
-                  var final_string = result_string.substring(1,result_string.length-1); 
+                 // var final_string = result_string.substring(1,result_string.length-1); 
 
                   console.log(result_string);
                   var result_notfound = "Result not found. Try looking for something else";
-                  var res_string = final_string.replace(/"/g,"");
+                  var res_string = result_string.replace(/"/g,"");
                  // var global=JSON.parse("["+final_string+"]");
                   
                   var result = [];
